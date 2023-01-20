@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://previews.123rf.com/images/lux100/lux1002004/lux100200400028/144439346-dibujado-a-mano-casa-de-patrones-sin-fisuras-fondo-de-repetici%C3%B3n-de-vector-con-objetos-de-casa-de-do.jpg);
+}
+/* header */
+#encabezado{
+    display: flex;
+    align-self: center;
+    background-color:#756966 ;
+    height: 160px;
+    color: #FEAA96  ;   
+}
+#encabezado div:not(.nombre){
+    display: contents;
+    width: 30%;
+}
+#encabezado h1{
+    margin-right: 5%;
+    width: 70%;
+}
+.nombre{
+   display: block;
+   width: 70%; 
+}
+#encabezado span{
+    color: white;
+    padding-left: 2%;
+}
+.text-lg, .text-sm{
+    font-family: 'Play', sans-serif;   
+    font-weight: bold;
+}
+ 
+
+/* contenido del cv*/
+.texto_aside{
+   background-color: #F3C2B6 ;
+   margin: 8% 8%;
+   padding: 8% 0;
+   border-radius: 20px;
+}
+.texto_aside, p, h2{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.foto{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    border-radius: 100px;
+}
+.ocultar{
+   display: none;
+}
+.boton{
+    margin-right: 10%;
+    font-size: 30px;
+}
+.fondo_texto{
+    background-color: #F3C2B6;
+    border-radius: 20px;
+}
+.desplega{
+    display: flex;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.desplega:hover{
+    color: #FEAA96;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+#MiExperiencia, h3, p{
+    padding-left: 5%;
+}
+#MiExperiencia, #MiEducacion, #Cursos, #Logros {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#MiExperiencia ul{
+    padding-left: 20%;
+}
+
+.texto_aside h2, .desplega h2, h3, p, li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*footer*/
+.pie-de-pagina{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 200%;
+    background-color:#756966;
+    width: 100%;
+}
+.iconos_footer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.pie-de-pagina a{
+    color: white;
+}
+.pie-de-pagina a:hover{
+    color: #FEAA96;
+}
+
+@media (min-width: 768px) { /*media queries para pc*/
+    /* header */
+    .text-lg {
+      font-size: 200%;
+      align-self: center;
+    }
+    #encabezado div img:not(.huella){
+        margin: 0 auto;
+        padding-left: 30px;
+        width: 12%;
+        height: fit-content;
+    }
+    .huella{
+        width: 5%;
+        height: fit-content;
+    }
+    /* contenido del cv*/
+    body main section{
+        padding: 0 5% 0 5%;
+        display: flex;
+    }
+    body main section aside section, body main section article section{
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    body main section aside{
+        background-color: #FEAA96;
+    } 
+  }
+  @media screen and (min-width: 768px) and (max-width: 990px){    /*media queries para tablet*/
+    #encabezado div img:not(.huella) {
+        width: 16%;
+    }
+    body main section aside {
+        width: 40%;
+    }
+    .col-lg-8{
+        width: 60%;
+    }
+    #encabezado h1 {    
+        width: 100%;
+  }
+}
+  @media (max-width: 767px) {  /*media queries para celular*/
+    /* header */
+    .text-sm {
+      font-size: 149%;
+      align-self: center;
+      padding-bottom: 2%; 
+    }
+    .huella{
+        padding-top: 2%;
+    }
+    #encabezado div img:not(.huella){
+        width: 22%;
+    height: fit-content;
+    }
+    #encabezado h1 {
+        margin-right: 0%;
+        width: 100%;
+        padding-left:  10%;
+        padding-top: 2%;
+    }
+    #encabezado{
+        height: 50%;
+    }
+    /* contenido del cv*/
+    body main section{
+        padding: 0 5% 0 5%;
+    }
+    body main section aside{
+        background-color: #FEAA96;
+        padding-bottom: 10%;
+    }
+    body main section aside section{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    /*footer*/
+    .iconos_footer{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
