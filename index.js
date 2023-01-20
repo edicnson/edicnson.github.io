@@ -1,16 +1,16 @@
-function mostrarExperiencia(event) { //Funcion para desplegar contenido de Experiencia
+function mostrarExperiencia(event) { //Funcion para agregar o quitar la clase ocultar en el elemento con id MiExperiencia
     var texto_trabajo=document.getElementById("MiExperiencia")
     texto_trabajo.classList.toggle("ocultar");
   }
-  function mostrarEducacion(event) { //Funcion para desplegar contenido de Educacion
+  function mostrarEducacion(event) { //Funcion para agregar o quitar la clase ocultar en el elemento con id Educacion
     var texto_educacion=document.getElementById("MiEducacion")
     texto_educacion.classList.toggle("ocultar");
   }
-  function mostrarCursos(event) {   //Funcion para desplegar contenido de Cursos
+  function mostrarCursos(event) {   //Funcion para agregar o quitar la clase ocultar en el elemento con id Cursos
     var texto_cursos=document.getElementById("Cursos")
     texto_cursos.classList.toggle("ocultar");
   }
-  function mostrarLogros(event) {   //Funcion para desplegar contenido de Logros
+  function mostrarLogros(event) {   //Funcion para agregar o quitar la clase ocultar en el elemento con id Logros
     var texto_logros=document.getElementById("Logros")
     texto_logros.classList.toggle("ocultar");
   }
